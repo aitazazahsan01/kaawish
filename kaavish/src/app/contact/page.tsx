@@ -6,7 +6,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { motion } from "framer-motion";
-// --- 1. Added Facebook to imports ---
 import { MapPin, Mail, Phone, User, Palette, Music, Users, Instagram, Linkedin, Facebook } from "lucide-react";
 import Link from "next/link";
 
@@ -68,59 +67,57 @@ export default function ContactUs() {
             className="space-y-8"
           >
             <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg">
-                {/* --- 2. Reorganized the layout of this card --- */}
-                <h3 className="text-2xl font-bold mb-4 text-amber-400">Contact Information</h3>
-                <div className="space-y-4 text-gray-300">
-                    <div className="flex items-start">
-                        <User className="w-6 h-6 mr-4 mt-1 text-amber-400 flex-shrink-0" />
-                        <div>
-                            <p className="font-bold text-white">Ms. Rubina Syed</p>
-                            <p>Founder/Director, Kaawish</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start">
-                        <MapPin className="w-6 h-6 mr-4 mt-1 text-amber-400 flex-shrink-0" />
-                        <p>H-13, Islamabad, Pakistan</p>
-                    </div>
-                    <div className="flex items-center">
-                        <Mail className="w-5 h-5 mr-4 text-amber-400 flex-shrink-0" />
-                        <a href="mailto:info@kaawish.com" className="hover:text-amber-400 transition-colors">info@kaawish.com</a>
-                    </div>
-                     <div className="flex items-center">
-                        <Phone className="w-5 h-5 mr-4 text-amber-400 flex-shrink-0" />
-                        <a href="tel:+923331234567" className="hover:text-amber-400 transition-colors">+92 333 1234567 (Example)</a>
-                    </div>
+              <h3 className="text-2xl font-bold mb-4 text-amber-400">Contact Information</h3>
+              <div className="space-y-4 text-gray-300">
+                <div className="flex items-start">
+                  <User className="w-6 h-6 mr-4 mt-1 text-amber-400 flex-shrink-0" />
+                  <div>
+                    <p className="font-bold text-white">Ms. Rubina Syed</p>
+                    <p>Founder/Director, Kaawish</p>
+                  </div>
                 </div>
+                <div className="flex items-start">
+                  <MapPin className="w-6 h-6 mr-4 mt-1 text-amber-400 flex-shrink-0" />
+                  <p>H-13, Islamabad, Pakistan</p>
+                </div>
+                <div className="flex items-center">
+                  <Mail className="w-5 h-5 mr-4 text-amber-400 flex-shrink-0" />
+                  <a href="mailto:info@kaawish.com" className="hover:text-amber-400 transition-colors">info@kaawish.com</a>
+                </div>
+                 <div className="flex items-center">
+                  <Phone className="w-5 h-5 mr-4 text-amber-400 flex-shrink-0" />
+                  <a href="tel:+923331234567" className="hover:text-amber-400 transition-colors">+92 333 1234567 (Example)</a>
+                </div>
+              </div>
 
-                {/* --- 3. Updated "Follow Us" section with new links --- */}
-                <div className="mt-6 pt-6 border-t border-gray-700">
-                    <h4 className="font-bold text-white mb-3">Follow Us</h4>
-                    <div className="flex items-center space-x-4">
-                        <Link href="https://www.instagram.com/bina.syedkaawish" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-amber-400 transition-colors">
-                            <Instagram className="w-6 h-6 mr-2"/>
-                            Instagram
-                        </Link>
-                        <Link href="https://www.facebook.com/share/16NwvEztpR/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-amber-400 transition-colors">
-                            <Facebook className="w-6 h-6 mr-2"/>
-                            Facebook
-                        </Link>
-                        <Link href="https://www.linkedin.com/company/kaawish-pk" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-amber-400 transition-colors">
-                            <Linkedin className="w-6 h-6 mr-2"/>
-                            LinkedIn
-                        </Link>
-                    </div>
+              <div className="mt-6 pt-6 border-t border-gray-700">
+                <h4 className="font-bold text-white mb-3">Follow Us</h4>
+                <div className="flex items-center space-x-4">
+                  <Link href="https://www.instagram.com/bina.syedkaawish" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-amber-400 transition-colors">
+                    <Instagram className="w-6 h-6 mr-2"/>
+                    Instagram
+                  </Link>
+                  <Link href="https://www.facebook.com/share/16NwvEztpR/" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-amber-400 transition-colors">
+                    <Facebook className="w-6 h-6 mr-2"/>
+                    Facebook
+                  </Link>
+                  <Link href="https://www.linkedin.com/company/kaawish-pk" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-300 hover:text-amber-400 transition-colors">
+                    <Linkedin className="w-6 h-6 mr-2"/>
+                    LinkedIn
+                  </Link>
                 </div>
+              </div>
             </div>
 
             <div className="bg-gray-800 bg-opacity-50 p-8 rounded-lg">
-                <h3 className="text-2xl font-bold mb-4 text-amber-400">Our Mission</h3>
-                <div className="space-y-3">
-                    <div className="flex items-center text-gray-300"><Palette className="w-5 h-5 mr-3 text-amber-400"/> Promote Art & Culture</div>
-                    <div className="flex items-center text-gray-300"><Users className="w-5 h-5 mr-3 text-amber-400"/> Empower Women & Youth</div>
-                    <div className="flex items-center text-gray-300"><Music className="w-5 h-5 mr-3 text-amber-400"/> Cultivate Strong Minds</div>
-                </div>
+              <h3 className="text-2xl font-bold mb-4 text-amber-400">Our Mission</h3>
+              <div className="space-y-3">
+                <div className="flex items-center text-gray-300"><Palette className="w-5 h-5 mr-3 text-amber-400"/> Promote Art & Culture</div>
+                <div className="flex items-center text-gray-300"><Users className="w-5 h-5 mr-3 text-amber-400"/> Empower Women & Youth</div>
+                <div className="flex items-center text-gray-300"><Music className="w-5 h-5 mr-3 text-amber-400"/> Cultivate Strong Minds</div>
+              </div>
             </div>
-
+            
             {/* Embedded Map */}
             <div className="rounded-lg overflow-hidden">
                 <iframe
@@ -135,6 +132,27 @@ export default function ContactUs() {
             </div>
           </motion.div>
         </div>
+
+        {/* --- Developer Credit --- */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="text-center mt-24"
+        >
+          <p className="text-sm text-gray-500">
+            Website by{' '}
+            <Link 
+              href="https://www.linkedin.com/in/muhammad-aitazaz-ahsan-4b2480353/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-semibold text-gray-400 hover:text-amber-400 transition-colors inline-flex items-center"
+            >
+              Muhammad Aaitazaz Ahsan <Linkedin className="w-4 h-4 ml-1.5" />
+            </Link>
+          </p>
+        </motion.div>
+
       </main>
     </div>
   );
